@@ -1,0 +1,3 @@
+Antes de poder ingresar a la pagina debera pedir un permiso en el siguiente link 'https://cors-anywhere.herokuapp.com/corsdemo'.
+Ademas debera abrir la pagina desde el archivo directamente, ya que por un error de la api, no es compatible con live server.
+Deberia funcionar correctamente si sigue esos pasos
