@@ -23,26 +23,39 @@
 <body>
     <header class="header">
 
-        <div class="bloqueLogo">
-            <img src="./img/logo.jpg" alt="" class="logo">
-        </div>
 
-        <div>
-            <span class="bloqueOpciones">
+        <div class="desplegable">
+            <button class="boton_desplegable"><i class="fa-solid fa-bars"></i></button>
+            <div class="bloqueOpciones Elementos_desplegable1">
                 <a href="./index.html" class="textoOpciones">HOME</a>
                 <a href="./playlist.html" class="textoOpciones">PLAYLIST</a>
                 <a href="./generos.html" class="textoOpciones">GENEROS</a>
+            </div>
 
-
-            </span>
+            <div class="bloque_sesiones Elementos_desplegable2">
+                <a href="./Formulario.html" class="user"><i class="fa-solid fa-user"></i></a>
+            </div>
         </div>
-        <div>
+
+
+        <div class="bloqueLogo">
+            <img src="./img/logo.jpg" alt="" class="logo">
+        </div>
+            <div class="bloqueOpciones">
+                <a href="./index.html" class="textoOpciones">HOME</a>
+                <a href="./playlist.html" class="textoOpciones">PLAYLIST</a>
+                <a href="./generos.html" class="textoOpciones">GENEROS</a>
+        </div>
+        <div class="bloque_busqueda">
             <form action="./resultado de busqueda.html" method="get" class="BusquedaCanciones">
+                <button type="submit" class="boton_search">Enviar</button>
+                <input class="input search" type="text" id="cancion" name="cancion" value="" placeholder=" ">
                 <label class="Lupita" for="cancion"><i class="fa-solid fa-magnifying-glass"></i></label>
-                <input class="input" type="text" id="cancion" name="cancion" value="">
-                <button type="submit">Enviar</button>
             </form>
         </div>
+
+        <div class="bloque_sesiones">
+            <a href="./Formulario.html" class="user"><i class="fa-solid fa-user"></i></a>
         </div>
 
     </header>
