@@ -18,18 +18,21 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css
 " rel="stylesheet">
 </head>
-
 <body>
-
+    
     <header class="header">
 
         <div class="bloqueLogo">
             <img src="./img/logo.jpg" alt="" class="logo">
         </div>
-            <div class="bloqueOpciones">
+
+
+        <div>
+            <span class="bloqueOpciones">
                 <a href="./index.html" class="textoOpciones">HOME</a>
                 <a href="./playlist.html" class="textoOpciones">PLAYLIST</a>
                 <a href="./generos.html" class="textoOpciones">GENEROS</a>
+            </span>
         </div>
         <div class="bloque_busqueda">
             <form action="./resultado de busqueda.html" method="get" class="BusquedaCanciones">
@@ -44,48 +47,38 @@
         </div>
 
     </header>
-    <div class="separador"></div>
+
     <main>
-        <div class="bloqueBanner">
-            <img src="./img/img-banner.jpg" alt="" class="bloqueBanner">
-        </div>
-        <h1 id="novedades">Artistas más escuchados en Marzo</h1>
-        <section class="section">
-        </section>
-        <section class="section section2">
-        </section>
-        <h1 id="novedades">Canciones más escuchadas en Marzo</h1>
-        <section>
-            <div class="cancionesenoferta" id="section3">
+
+    <form action="" class="form">
+        <h2 class="form_tittle">Inicia Sesión</h2>
+        <p class="form_paragraph">¿Aun no tiene cuenta? <a href="" class="form_link">Entra aqui</a></p>
+
+
+        <div class="form_container">
+            <div class="form_group">
+                <input type="text" id="name" class="form_input" placeholder=" ">
+                <label for="name" class="form_label">Nombre:</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="text" id="user" class="form_input" placeholder=" ">
+                <label for="user" class="form_label">Usuario:</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="password" id="password" class="form_input" placeholder=" ">
+                <label for="password" class="form_label">Contraseña:</label>
+                <span class="form_line"></span>
             </div>
 
-        </section>
-        <h1 class="cancionesmasescuchadas">Discos más escuchados en Marzo</h1>
-        <section>
-            <div class="cancionesenoferta" id="Div1">
-
-            </div>
-        </section>
-
-        <a name="quienesSomos"></a>
-        </section>
-        <h1 id="quienesSomos">Quienes Somos</h1>
-        <div id="somosQuienes">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/RbD9McgRxVo"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen class="iframe"></iframe>
-            <p class="quienes">Tidal es un servicio de streaming de música creado en 2014, y que llegó a España en 2015.
-                Ese mismo año, Tidal fue comprada por el rapero Jay-Z junto a un grupo de personalidades del mundo de la
-                música comoMadonna, Rihanna, Beyoncé, Kanye West y Daft Punk, entre otros. Es, por lo tanto, una
-                alternativa dirigida por artistas para intentar competir contra Spotify, y que desde el principio estuvo
-                apoyada por discográficas como Sony, Universal y Warner.
-                Se trata de un servicio de streaming musical. Esto quiere decir que tú pagas una suscripción mensual, y
-                a cambio tienes acceso a su amplio catálogo de 80 millones de canciones y 350000 vídeos. Este contenido
-                lo escucharás directamente a través de Internet en su versión web o en sus aplicaciones para móvil y
-                ordenador, y también podrás descargarte canciones para poder escucharlas cuando estés sin conexión.
-            </p>
+            <input type="submit" class="form_submit" value="Entrar">
         </div>
+    </form>
+
+
+
+
     </main>
 
     <footer>
@@ -98,7 +91,5 @@
         </div>
     </footer>
     <script src="./js/header.js"></script>
-    <script src="./js/index.js"></script>
 </body>
-
 </html>

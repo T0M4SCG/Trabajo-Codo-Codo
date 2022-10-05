@@ -10,17 +10,21 @@ a{
 }
 
 body{
+    padding: 0;
+    margin: 0;
     background-image: url(../img/bg-body.png);
     background-repeat: repeat;
+    min-height: 100vh;
 }
 .header{
-
+    position: fixed;
 display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: space-evenly;
 background-color: rgb(61, 61, 61);
-margin-bottom: 20px;
+height: 150px;
+width: 100%;
 }
 /* Header */
 
@@ -29,6 +33,7 @@ margin-bottom: 20px;
     flex-wrap: wrap;
     justify-content: flex-end;
     color: white;
+    margin: auto;
 }
 /* Logo */
 
@@ -62,17 +67,83 @@ margin-bottom: 20px;
     margin-top: 30px;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
-    gap: 30px;
+    gap: 0 15px;
 }
 
 .textoOpciones{
     text-decoration: none;
     color: white;
-    background-color: rgb(0, 0, 0);
-padding: 5px 20px;
+    background-color: #000000;
+    padding: 5px 20px;
     text-align: center;
+    margin: auto;
     line-height: 40px;
+    font-size: 15px;
     border: solid 2px rgb(255, 255, 255);
+    border-radius: 8px;
+    transition: all 0.3s linear;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+.textoOpciones:hover{
+    background-color: rgb(129, 129, 129);
+}
+.search{
+    background: none;
+    border: none;
+    border-bottom: rgb(255, 255, 255) solid 2px;
+    outline: none;
+    height: 25px;
+    width: auto;
+    margin: 0 10px;
+}
+.search:focus{
+    background: none;
+    outline: none;
+    color: white;
+}
+.boton_search{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    border: rgb(255, 255, 255) solid 1px;
+    height: 25px;
+    width: auto;
+    padding: 15px;
+    top: 12,5px;
+    transition: all 0.3s ;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    -webkit-transition: all 0.3s ;
+    -moz-transition: all 0.3s ;
+    -ms-transition: all 0.3s ;
+    -o-transition: all 0.3s ;
+}
+.boton_search:hover{
+    background-color: rgb(129, 129, 129);
+}
+.user{
+    font-size: 40px;
+    color: black;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.user:hover{
+    color: white;
 }
 
 #tutiodos{
@@ -81,7 +152,6 @@ padding: 5px 20px;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 30px;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     color: whitesmoke;
@@ -119,6 +189,7 @@ width: 33%;
 }
 .Lupita{
     color: white;
+    margin: auto;
 }
 
 #novedades{
@@ -152,6 +223,7 @@ main{
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
+    padding-top: 170px;
 }
 .img{
     height: 100%;
@@ -365,9 +437,6 @@ text-align: center;
     margin-top: 3vh;
     font-family: 'Bebas Neue', cursive;
 }
-a:hover{
-    color: red;
-    }
 
 .sub-generos{
     font-family: 'Bebas Neue', cursive;
@@ -399,8 +468,117 @@ a:hover{
     justify-content: center;
     align-items: center;
 }
+
+.form{
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
     
-    
+.form_tittle{
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+.form_paragraph{
+    font-weight: 300;
+}
+.form_link{
+    font-weight: 400;
+    color: #000000;
+}
+.form_container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+.form_group{
+    position: relative;
+    color: rgb(61 61 61);
+}
+.form_input{
+    width: 100%;
+    background: none;
+    color: rgb(61, 61, 61);
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid ;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form_input:not(:placeholder-shown){
+    color:black
+}
+
+.form_label{
+    color: rgb(61, 61, 61);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transition: transform .5s, color .3s;
+    -webkit-transition: transform .5s, color .3s;
+    -moz-transition: transform .5s, color .3s;
+    -ms-transition: transform .5s, color .3s;
+    -o-transition: transform .5s, color .3s;
+}
+
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+}
+
+.form_submit{
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 4em;
+    border: none;
+    border-radius: .5em;
+
+}
+
+.form_line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: blue;
+    height: 1px;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+}
+.form_input:focus ~ .form_line,
+.form_input:not(:placeholder-shown) ~ .form_line{
+    transform: scale(1);
+}
+    @media screen and (max-width:425px) {
+        .form_tittle{
+            font-size: 1.8rem;
+        }
+    }
+        
+
     @media screen and (max-width:600px) {
         
         #tutiotres{
@@ -414,28 +592,32 @@ a:hover{
             font-family: 'Montserrat', sans-serif;
             color: whitesmoke;
         }
+        .bloqueLogo{
+            display: none;
+        }
+
      main{
+        padding-top: 20px ;
         width: 100%;
         display: flex;
         flex-direction: column;
      }   
 
     .header{
+        position: static;
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     }
+
+    .bloque_busqueda{
+        
+    }
+
     .bloqueOpciones {
-        display: flex;
-        flex-direction: column;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        font-family: 'Montserrat', sans-serif;
-        align-content: flex-start;
-        flex-wrap: wrap;
-        justify-content: flex-start;
+    display: none;
     }
         
         .section {
