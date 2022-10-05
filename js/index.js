@@ -29,7 +29,7 @@ fetch(url)
       contenedor2.innerHTML += `            
             <article class="article">
             <a href="./detalle-artistas.html?id=${artistas[i].id}"> <img src="${artistas[i].picture_medium}" alt="" class="img"></a>
-            <a href="./detalle-artistas.html?id=${artistas[i].id}"><p class="lorem">${artistas[i].name}</p></a>
+            <a href="./detalle-artistas.html?id=${artistas[i].id}" ><p class="lorem">${artistas[i].name}</p></a>
             <a href="./detalle-artistas.html?id=${artistas[i].id}" class="verMas">Ver Más</a>
             </article>`;
 
@@ -45,10 +45,10 @@ fetch(url)
       let artistas = datos.artists.data;
       contenedor3.innerHTML += `            
             <article class="article">
-            <a href="./detalle-artistas.html?id=${artistas[i].id}"> <img src="${artistas[i].picture_medium}" alt="" class="img"></a>
-             <a href="./detalle-artistas.html?id=${artistas[i].id}"><p class="lorem">${artistas[i].name}</p></a>
-             <a href="./detalle-artistas.html?id=${artistas[i].id}" class="verMas">Ver Más</a>
-         </article>`;
+            <a href="./detalle-artistas.html?id=${artistas[i].id}"> <img src="${artistas[i].picture_medium}" alt="" class="img class="canciones""></a>
+            <a href="./detalle-artistas.html?id=${artistas[i].id}" class="canciones"><p class="lorem">${artistas[i].name}</p></a>
+            <a href="./detalle-artistas.html?id=${artistas[i].id}" class="verMas">Ver Más</a>
+            </article>`;
     }
   })
   .catch(function (error) {
