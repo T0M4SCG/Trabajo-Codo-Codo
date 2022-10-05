@@ -220,7 +220,7 @@ body {
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 30px;
+  margin-bottom: 20px;
   width: 100%;
 }
 .article {
@@ -260,18 +260,27 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 30px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  margin-top: auto;
   background-color: rgb(61, 61, 61);
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
+}
+.bloqueFooter{
+  display: flex;
+  margin: 0 5px;
 }
 .textoFooter {
   text-decoration: none;
   color: white;
   text-align: center;
   font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  transition: transform 0.5s, text-shadow 0.5s;
+}
+.textoFooter:hover{
+  transform: scale(1.2) translateY(-10px);
+  transform-origin: top;
+  text-shadow: -5px 10px 4px rgb(0, 0, 0);
 }
 #novedades {
   color: white;
@@ -544,7 +553,7 @@ footer {
 
 .form_input:focus + .form_label,
 .form_input:not(:placeholder-shown) + .form_label {
-  transform: translateY(-12px) scale(0.7);
+  transform: translateY(12px) scale(0.7);
   transform-origin: left top;
 }
 
