@@ -14,7 +14,7 @@ fetch(urluno)
   .then(function (artista) {
     console.log(artista);
     contenedor4.innerHTML += `<article class="articlecanc">
-        <img src="${artista.picture_medium}" alt="" class="img">
+        <img src="${artista.picture_medium}" alt="" class="imagen">
         <h3 class="lorem">${artista.name}</h3>
         </article>`;
   });
@@ -31,7 +31,7 @@ fetch(urldos)
     for (let i = 0; i < 5; i++) {
       contenedor5.innerHTML += `
         <article class="articlecanc">
-        <img src="${albumes.data[i].cover_medium}" alt="" class="fotodiscos">
+        <img src="${albumes.data[i].cover_medium}" alt="" class="imagen2">
         <h4>${albumes.data[i].title}</h4>
         <p>${albumes.data[i].release_date}</p>
         <a href="./detalle-album.html?id=${albumes.data[i].id}" class="verMas">Ver más</a>

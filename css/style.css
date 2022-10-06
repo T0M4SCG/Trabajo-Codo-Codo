@@ -204,12 +204,23 @@ body {
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  min-height: 110vh;
 }
 .BusquedaCanciones {
   display: flex;
   justify-content: space-between;
   width: auto;
 
+}
+.imagen{
+  width: auto;
+  height: 100%;
+  border: solid white 1px;
+}.imagen2{
+  width: auto;
+  height: 100%;
+  border: solid white 1px;
+  max-width: 18vw;
 }
 .Lupita {
   position: absolute;
