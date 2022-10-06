@@ -20,32 +20,32 @@ fetch(url)
     for (let i = 0; i < 5; i++) {
       contenedor.innerHTML += `
         <article class="articlecanc">
-        <img src="${albumes[i].cover}" alt="" class="fotodiscos">
-        <h4>${albumes[i].title}</h4>
-        <p>${albumes[i].artist.name}</p>
-        <a href="./detalle-album.html?id=${albumes[i].id}" class="verMas">Ver más</a>
-    </article>
+        <div class="algo"><a href="./detalle-album.html?id=${albumes[i].id}"> <img src="${albumes[i].cover}" alt="" class="algo image"></a></div>
+        <div class="div_article"><a href="./detalle-album.html?id=${albumes[i].id}"><h4>${albumes[i].title}</h4></a>
+        <a href="./detalle-album.html?id=${albumes[i].id}"><p>${albumes[i].artist.name}</p></a>
+        <a href="./detalle-album.html?id=${albumes[i].id}" class="verMas">Ver más</a></div>
+        </article>
     `;
       contenedor2.innerHTML += `            
             <article class="article">
-            <a href="./detalle-artistas.html?id=${artistas[i].id}"> <img src="${artistas[i].picture_medium}" alt="" class="img"></a>
+            <div class="shadow"><a href="./detalle-artistas.html?id=${artistas[i].id}"> <img src="${artistas[i].picture_medium}" alt="" class="img shadow"></a></div>
             <a href="./detalle-artistas.html?id=${artistas[i].id}" ><p class="lorem">${artistas[i].name}</p></a>
             <a href="./detalle-artistas.html?id=${artistas[i].id}" class="verMas">Ver Más</a>
             </article>`;
 
       contenedor4.innerHTML += `           
       <article class="articlecanc">
-      <img width="560" height="315" class="videos" src="${canciones[i].album.cover_xl}" frameborder="0"></iframe>
-      <h4>${canciones[i].title}</h4>
-      <p>${canciones[i].artist.name}</p>
-      <a href="./detalle-cancion.html?id=${canciones[i].id}" class="verMas">Ver más</a>
+      <div class="algo"><a href="./detalle-cancion.html?id=${canciones[i].id}"><img src="${canciones[i].album.cover_xl}" alt="" class="algo image"></a></div>
+      <div class ="div_article"><a href="./detalle-cancion.html?id=${canciones[i].id}"><h4>${canciones[i].title}</h4></a>
+      <a href="./detalle-cancion.html?id=${canciones[i].id}"><p>${canciones[i].artist.name}</p></a>
+      <a href="./detalle-cancion.html?id=${canciones[i].id}" class="verMas">Ver más</a></div>
   </article>`;
     }
     for (let i = 5; i < 10; i++) {
       let artistas = datos.artists.data;
       contenedor3.innerHTML += `            
             <article class="article">
-            <a href="./detalle-artistas.html?id=${artistas[i].id}"> <img src="${artistas[i].picture_medium}" alt="" class="img class="canciones""></a>
+            <div class="shadow"><a href="./detalle-artistas.html?id=${artistas[i].id}"> <img src="${artistas[i].picture_medium}" alt="" class="img shadow"></a></div>
             <a href="./detalle-artistas.html?id=${artistas[i].id}" class="canciones"><p class="lorem">${artistas[i].name}</p></a>
             <a href="./detalle-artistas.html?id=${artistas[i].id}" class="verMas">Ver Más</a>
             </article>`;
