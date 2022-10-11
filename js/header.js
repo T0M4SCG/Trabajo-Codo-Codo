@@ -40,6 +40,6 @@ formulario.addEventListener("submit", function (e) {
       "Debes escribir mas de 3 caracteres para que podamos realizar la busqueda"
     );
   } else {
-    this.submit();
+    e.submit();
   }
 });
