@@ -579,6 +579,7 @@ footer {
   margin-top: 3em;
   display: grid;
   gap: 2.5em;
+  min-height: auto;
 }
 .form_group {
   position: relative;
@@ -625,8 +626,37 @@ footer {
   padding: 0.8em 4em;
   border: none;
   border-radius: 0.5em;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+.form_submit:hover{
+  background-color: rgb(108, 108, 108);
+}
+.nombre , .email , .contraseña{
+  background: white;
+  color: black;
+  border-radius: 10px 10px 0 10px;
 }
 
+
+.nombre{
+  position: absolute;
+  top: -20px;
+  left: -10vw;
+  width: 180px;
+}
+.email{
+  position: absolute;
+  top: -20px;
+  left: -10vw;
+  width: 180px;
+}
+.contraseña{
+  position: absolute;
+  top: -20px;
+  left: -10vw;
+  width: 180px;
+}
 .form_line {
   position: absolute;
   bottom: 0;

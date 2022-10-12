@@ -25,7 +25,7 @@
 
     <main class="main_formulario">
 
-    <form action="" class="form">
+    <form action="./index.html" method="get" class="form" id="form">
         <h2 class="form_tittle">Inicia Sesión</h2>
         <p class="form_paragraph">¿Aun no tiene cuenta? <a href="" class="form_link">Entra aqui</a></p>
 
@@ -35,19 +35,22 @@
                 <input type="text" id="name" class="form_input" placeholder=" ">
                 <label for="name" class="form_label">Nombre:</label>
                 <span class="form_line"></span>
+                <p class="nombre"></p>
             </div>
             <div class="form_group">
-                <input type="text" id="user" class="form_input" placeholder=" ">
-                <label for="user" class="form_label">Usuario:</label>
+                <input type="email" id="email" class="form_input" placeholder=" ">
+                <label for="email" class="form_label">Email:</label>
                 <span class="form_line"></span>
+                <p class="email"></p>
             </div>
             <div class="form_group">
                 <input type="password" id="password" class="form_input" placeholder=" ">
                 <label for="password" class="form_label">Contraseña:</label>
                 <span class="form_line"></span>
+                <p class="contraseña"></p>
             </div>
 
-            <input type="submit" class="form_submit" value="Entrar">
+            <input type="submit" class="form_submit"></input>
         </div>
     </form>
 
@@ -65,5 +68,6 @@
         </div>
     </footer>
     <script src="./js/header.js"></script>
+    <script src="./js/formulario.js"></script>
 </body>
 </html>
