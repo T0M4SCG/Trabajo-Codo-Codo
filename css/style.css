@@ -200,6 +200,10 @@ body {
   margin-top: 30px;
   width: 100%;
 }
+.main_contact{
+  min-height: 100vh;
+}
+
 .maindetalle {
   display: flex;
   flex-wrap: wrap;
@@ -632,30 +636,8 @@ footer {
 .form_submit:hover{
   background-color: rgb(108, 108, 108);
 }
-.nombre , .email , .contraseña{
-  background: white;
-  color: black;
-  border-radius: 10px 10px 0 10px;
-}
-
-
-.nombre{
-  position: absolute;
-  top: -20px;
-  left: -10vw;
-  width: 180px;
-}
-.email{
-  position: absolute;
-  top: -20px;
-  left: -10vw;
-  width: 180px;
-}
-.contraseña{
-  position: absolute;
-  top: -20px;
-  left: -10vw;
-  width: 180px;
+.advertencias{
+  height: auto;
 }
 .form_line {
   position: absolute;
@@ -673,7 +655,7 @@ footer {
   transform: scale(1);
 }
 .main_formulario {
-  min-height: 130vh;
+  min-height: 145vh;
 }
 .nav__label,
 .nav__input {
@@ -684,12 +666,174 @@ footer {
   justify-content: space-between;
   width: 75%;
 }
+.formulario_contacto{
+  background: rgb(27, 31, 34, 0.8);
+  width: 640px;
+  margin: 50px auto;
+  max-width: 97%;
+  border-radius: 8px;
+  padding: 55px 30px;
+  color: white;
+}
+.formulario_contacto .tittle h2{
+  letter-spacing: 6px;
+  border-bottom: 1px solid white;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+}
+.formulario_contacto .half{
+  display: flex;
+  justify-content: space-between;
+}
+.formulario_contacto .half .item{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  width: 48%;
+}
+.formulario_contacto label{
+  display: block;
+  font-size: 13px;
+  letter-spacing: 3.5px;
+  margin-bottom: 16px;
+}
+.formulario_contacto .half .item input{
+  border-radius: 8px;
+  border: 1px solid white;
+  outline: 0;
+  padding: 16px;
+  width: 100%;
+  height: 44px;
+  background: transparent;
+  font-size: 17px;
+}
+.formulario_contacto .full{
+  margin-bottom: 24px;
+}
+.formulario_contacto .full textarea{
+  background: transparent;
+  border-radius: 8px;
+  border: 1px splid white;
+  outline: 0;
+  padding: 12px 16px;
+  width: 100%;
+  height: 200px;
+  font-size: 17px;
+}
+.formulario_contacto .action{
+  margin-bottom: 32px;
+}
+.formulario_contacto .action input{
+  background: transparent;
+  border-radius: 8px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  height: 44px;
+  letter-spacing: 3px;
+  outline: 0;
+  padding: 0 20px 0 22px;
+  margin-right: 20px;
+}
+.formulario_contacto .action input[type="submit"]{
+  background: white;
+  color: black;  
+}
+.formulario_contacto .icons a{
+  border: 1px solid white;
+  border-radius: 50%;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 600;
+  width: 38px;
+  margin-right: 10px;
+
+}
+.formulario_contacto .action input[type="reset"]{
+  color: white;
+}
+.formulario_contacto .half .item input:focus, .formulario_contacto .full textarea:focus, .formulario_contacto .action input[type="reset"]:hover, .formulario_contacto .icons a:hover{
+  background: rgb(255, 255, 255, 0.1);
+}
+.formulario_contacto .half .item input:focus, .formulario_contacto .full textarea:focus{
+  color: white;
+}
+.formulario_contacto .half .item input, .formulario_contacto .full textarea{
+  color: white;
+}
+.textodetacanc {
+  color: white;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+}
+.Logo-Duketo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.main-detalle-album {
+  width: 100%;
+}
+#div-detalle-album {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagen-duki {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.duki-tranquilo {
+  width: 50vh;
+  height: 50vh;
+}
+.h2-detalle {
+  font-size: 15px;
+}
+.articlecanc {
+  width: 100%;
+}
+.cancionesmasescuchadas {
+  width: 100%;
+}
+.videodetallecanc {
+  width: 100%;
+  height: 30vh;
+}
+.main_formulario{
+  min-height: 110vh;
+}
 @media screen and (max-width: 425px) {
   .form_tittle {
     font-size: 1.8rem;
   }
 }
+@media (max-width: 390px){
+  .formulario_contacto .half{
+    flex-direction: column;
+  }
+  .formulario_contacto .half .item{
+    width: 100%;
+  }
+  .formulario_contacto{
+    width: 98%;
+  }
+  .formulario_contacto .action{
+    display: flex;
+    flex-direction: column;
+  }
+  .formulario_contacto .action input{
+    margin-bottom: 10px;
+    width: 100%;
 
+  }
+} 
 @media screen and (max-width: 390px) {
   #tutiotres {
     display: flex;
@@ -706,8 +850,8 @@ footer {
     display: block;
   }
   .Lupita {
-    top: 370px;
-    left: 145px;
+    top: 690px;
+    left: 150px;
   }
   .bloque_sesiones {
     display: flex;
@@ -723,10 +867,12 @@ footer {
   .bloqueOpciones {
     display: grid;
     grid-auto-flow: row;
-    gap: 10px;
+    gap: 40px;
+    margin-top: 0;
   }
   .textoOpciones {
     width: 400px;
+    font-size: 40px;
     background-color: rgba(0, 0, 0, 0);
     border: solid 1px rgb(0 0 0 / 0);
   }
@@ -737,7 +883,7 @@ footer {
     bottom: 0;
     background: rgb(58, 54, 54);
     width: 100%;
-    height: 442px;
+    height: 100%;
     left: 0;
     align-items: center;
     flex-direction: column;
@@ -765,6 +911,7 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     max-height: 100px;
+    width: 390px;
   }
 
   .section {
@@ -792,7 +939,7 @@ footer {
     align-content: center;
     align-items: center;
   }
-
+  
   .fotodetallecanc {
     border: solid 1px white;
     width: 90%;
@@ -802,53 +949,19 @@ footer {
     justify-content: center;
     margin: 0 auto;
   }
+  .main_contact{
+    min-height: 110vh;
+  }
+  footer{
+    width: 390px;
+    font-size: 10px;
+  }
   .bloqueFooter {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     margin-top: 10px;
-  }
-  .textodetacanc {
-    color: white;
-    text-align: center;
-    font-family: "Bebas Neue", cursive;
-  }
-  .Logo-Duketo {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
   }
-  .main-detalle-album {
-    width: 100%;
   }
-  #div-detalle-album {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .imagen-duki {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .duki-tranquilo {
-    width: 50vh;
-    height: 50vh;
-  }
-  .h2-detalle {
-    font-size: 15px;
-  }
-  .articlecanc {
-    width: 100%;
-  }
-  .cancionesmasescuchadas {
-    width: 100%;
-  }
-  .videodetallecanc {
-    width: 100%;
-    height: 30vh;
-  }
-}
+
