@@ -20,6 +20,9 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background-color: black;
 }
+main{
+  min-height: 100vh;
+}
 body {
   padding: 0;
   margin: 0;
@@ -365,7 +368,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 18vw;
   height: 67vh;
   font-family: "Montserrat", sans-serif;
   color: whitesmoke;
@@ -655,7 +657,7 @@ footer {
   transform: scale(1);
 }
 .main_formulario {
-  min-height: 145vh;
+  min-height: 125vh;
 }
 .nav__label,
 .nav__input {
@@ -796,9 +798,6 @@ footer {
 .h2-detalle {
   font-size: 15px;
 }
-.articlecanc {
-  width: 100%;
-}
 .cancionesmasescuchadas {
   width: 100%;
 }
@@ -834,6 +833,69 @@ footer {
 
   }
 } 
+@media (max-width: 900px){
+  .user {
+    color: white;
+    transition: all 0.3s;
+  }
+  .user:hover{
+    color: rgba(194, 194, 194, 0.5);
+  }
+  .nav__label {
+    display: block;
+  }
+  .bloqueOpciones {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 30px;
+    margin-top: 0;
+  }
+  .textoOpciones {
+    width: 400px;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 1px rgb(0 0 0 / 0);
+  }
+  .nav__menu {
+    position: fixed;
+    z-index: 100;
+    top: 100px;
+    bottom: 0;
+    background: rgb(58, 54, 54);
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    display: flex;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s;
+    padding-bottom: 50px;
+  }
+  .bloque_sesiones{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .Lupita{
+    display: none;
+  }
+  .nav__input:checked + .nav__menu {
+    clip-path: circle(100% at center);
+    z-index: 100000;
+  }
+  .header {
+    position: fixed;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    max-height: 100px;
+    width: 100%;
+  }
+}
 @media screen and (max-width: 390px) {
   #tutiotres {
     display: flex;
