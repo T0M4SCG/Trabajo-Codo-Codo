@@ -897,6 +897,9 @@ footer {
   }
 }
 @media screen and (max-width: 390px) {
+  .article, .articlecanc{
+    width: 90%;
+  }
   #tutiotres {
     display: flex;
     flex-wrap: wrap;
