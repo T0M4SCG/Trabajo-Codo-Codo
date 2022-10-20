@@ -657,7 +657,7 @@ footer {
   transform: scale(1);
 }
 .main_formulario {
-  min-height: 125vh;
+  min-height: 135vh;
 }
 .nav__label,
 .nav__input {
@@ -805,34 +805,11 @@ footer {
   width: 100%;
   height: 30vh;
 }
-.main_formulario{
-  min-height: 110vh;
-}
 @media screen and (max-width: 425px) {
   .form_tittle {
     font-size: 1.8rem;
   }
 }
-@media (max-width: 390px){
-  .formulario_contacto .half{
-    flex-direction: column;
-  }
-  .formulario_contacto .half .item{
-    width: 100%;
-  }
-  .formulario_contacto{
-    width: 98%;
-  }
-  .formulario_contacto .action{
-    display: flex;
-    flex-direction: column;
-  }
-  .formulario_contacto .action input{
-    margin-bottom: 10px;
-    width: 100%;
-
-  }
-} 
 @media (max-width: 900px){
   .user {
     color: white;
@@ -897,8 +874,47 @@ footer {
   }
 }
 @media screen and (max-width: 390px) {
+  .main_formulario{
+    min-height: 100vh;
+  }
+  .imgcancion{
+    height: auto;
+    width: 100%;
+  }
+  .duki-tranquilo {
+    width: 80%;
+    height: auto;
+  }
+  .imagen2{
+    height: auto;
+    min-width: 100%;
+  }
+  .formulario_contacto .half{
+    flex-direction: column;
+  }
+  .formulario_contacto .half .item{
+    width: 100%;
+  }
+  .formulario_contacto{
+    width: 96%;
+  }
+  .formulario_contacto .action{
+    display: flex;
+    flex-direction: column;
+  }
+  .formulario_contacto .action input{
+    margin-bottom: 10px;
+    width: 100%;
+
+  }
   .article, .articlecanc{
+    margin: 10px 0;
     width: 90%;
+    height: auto;
+  }
+  .imagen{
+    height: auto;
+    width: 100%;
   }
   #tutiotres {
     display: flex;
