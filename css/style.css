@@ -316,7 +316,9 @@ main {
   color: whitesmoke;
   font-weight: 900;
 }
-
+.body_contact{
+  font-family:"Bebas Neue", cursive;
+}
 footer {
   display: flex;
   flex-wrap: wrap;
