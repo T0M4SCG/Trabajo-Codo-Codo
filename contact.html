@@ -12,35 +12,36 @@
     <header class="header"></header>
     <main class="main_contact">
         <div class="contacto">
-            <form class="formulario_contacto" action="">
+            <form class="formulario_contacto" id="formulario_contacto" action="">
                 <div class="tittle">
                     <h2>CONTACTO</h2>
                 </div>
                 <div class="half">
                     <div class="item">
                         <label for="name">NOMBRE</label>
-                        <input type="text" id="nombre">
+                        <input type="text" name="name" id="nombre">
                     </div>
                     <div class="item">
                         <label for="email">EMAIL</label>
-                        <input type="email" id="email">
+                        <input type="email" name="email" id="email">
                     </div>
                 </div>
                 <div class="full">
                     <label for="mensaje">MENSAJE</label>
-                    <textarea id="mensaje""></textarea>
+                    <textarea id="mensaje" name="mensaje"></textarea>
                 </div>
                 <div class="action">
-                    <input type="submit" value="Enviar Mensaje">
+                    <button type="submit">Enviar Mensaje</button>
                     <input type="reset" value="Borrar">
                 </div>
                 <div class="icons">
-                    <a href="" class="fa-brands fa-twitter"></a>
-                    <a href="" class="fa-brands fa-facebook"></a>
-                    <a href="" class="fa-brands fa-instagram"></a>
-                    <a href="" class="fa-brands fa-github"></a>
+                    <a href="https://twitter.com/TIDAL" class="fa-brands fa-twitter" target="_blank"></a>
+                    <a href="https://www.facebook.com/TIDAL" class="fa-brands fa-facebook" target="_blank"></a>
+                    <a href="https://www.instagram.com/tidal/?hl=es" target="_blank" class="fa-brands fa-instagram"></a>
+                    <a href="https://www.youtube.com/tidal" class="fa-brands fa-youtube" target="_blank"></a>
                 </div>
             </form>
+            <a href="mailto:tidal@hotmail.com" id="enviar">mail</a>
 
 
 
@@ -52,5 +53,6 @@
 
     <script src="./js/header.js"></script>
     <script src="./js/footer.js"></script>
+    <script src="./js/contacto.js"></script>
 </body>
 </html>

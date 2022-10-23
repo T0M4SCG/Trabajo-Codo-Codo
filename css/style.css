@@ -137,6 +137,9 @@ body {
   color: white;
   border-bottom: black solid 2px;
 }
+#enviar{
+  opacity: 0;
+}
 .boton_search {
   display: flex;
   align-items: center;
@@ -726,7 +729,7 @@ footer {
 .formulario_contacto .action{
   margin-bottom: 32px;
 }
-.formulario_contacto .action input{
+.formulario_contacto .action input, .formulario_contacto .action button{
   background: transparent;
   border-radius: 8px;
   border: 1px solid white;
@@ -739,7 +742,7 @@ footer {
   padding: 0 20px 0 22px;
   margin-right: 20px;
 }
-.formulario_contacto .action input[type="submit"]{
+.formulario_contacto .action button{
   background: white;
   color: black;  
 }
